@@ -75,12 +75,12 @@ a {
     padding-right: 2.0rem;
     box-shadow: 0.35vw 0.35vw 0rem #000;
     margin-right: 0rem;
-    transition: transform 100ms linear, opacity 200ms ease-in-out;
+    transition: transform 300ms linear, opacity 300ms ease-in-out;
 }
 
 .button:hover {
     transform: scale(1.08);
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .close-menu {
@@ -167,13 +167,13 @@ a {
 .main-title {
     font-family: "Press Start 2P", sans-serif;
     color: #D8F651;
-    text-shadow: 0.5rem 0.5rem 0 #000;
+    text-shadow: 0.3vw 0.3vw 0 #000;
 }
 
 .subtitle {
     font-family: "Press Start 2P", sans-serif;
     color: #FFF;
-    text-shadow: 0.4rem 0.4rem 0 #000;    
+    text-shadow: 0.3vw 0.3vw 0 #000;    
 }
 
 .banner .wrapper {
@@ -301,17 +301,29 @@ a {
     margin-bottom: 7rem;
 }
 
+.wrapper-topic {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.topic-title {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 2.5rem;
+    color: #FFF;
+    margin: 7vw;
+}
+
 .section.-projects {
-    background-color: #000;
-    padding-bottom: 12rem;
+    background-color: #001D3D;
+    padding-bottom: 5vw;
 }
 
 .section.-projects .main-title {
     color: #FFF;
     text-align: center;
     text-shadow: none;
-    font-size: 3rem;
-    margin-bottom: 10rem;    
+    margin-bottom: 5vw;    
 }
 
 .section.-projects .card-project {
@@ -319,7 +331,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #18448C;
-    box-shadow: 0.45vw 0.45vw 0 #97A1AF;
+    box-shadow: 0.45vw 0.45vw 0 #B8B8B8;
     width: 20%;
     height: 20%;
 }
@@ -335,7 +347,8 @@ a {
 }
 
 .card-project {
-    transition: transform 200ms linear;
+    transition: transform 300ms linear;
+    cursor: pointer;
 }
 
 .card-project:hover {
@@ -343,7 +356,7 @@ a {
 }
 
 .section.-sobre {
-    background-color: #251627;
+    background-color: #FFC300;
     border-bottom-color: #000;
 }
 
@@ -363,7 +376,7 @@ a {
 }
 
 .section.-contatos {
-    background-color: #4B5267;
+    background-color: #778DA9;
     border-bottom: none;
     height: 80rem;
 }
@@ -410,7 +423,6 @@ a {
     text-align: center;
     font-size: 3rem;
     font-weight: 600;
-    transition: transform 200ms cubic-bezier(.45,.97,.68,2.48);
     cursor: pointer;
 }
 
