@@ -55,14 +55,14 @@
                 <img class="icon" src="assets/IMG/ico-html5.png" alt="Logo HTML pixel art">
                 <div class="right">
                     <h3 class="title">HTML</h3>
-                    <progress class="progress-bar" max="100" value="60">70%</progress>
+                    <progress class="progress-bar" max="100" value="50">70%</progress>
                 </div>
             </article>
             <article class="list">
                 <img class="icon" src="assets/IMG/ico-css3.png" alt="Logo CSS pixel art">
                 <div class="right">
                     <h3 class="title">CSS</h3>
-                    <progress class="progress-bar" max="100" value="60">70%</progress>
+                    <progress class="progress-bar" max="100" value="50">70%</progress>
                 </div>
             </article>
             <article class="list">
@@ -73,9 +73,9 @@
                 </div>
             </article>
             <article class="list">
-                <img class="icon" src="assets/IMG/ico-nodejs.png" alt="Logo NodeJS pixel art">
+                <img class="icon" src="assets/IMG/r.png" alt="Logo Linguagem R pixel art">
                 <div class="right">
-                    <h3 class="title">NodeJS</h3>
+                    <h3 class="title">R</h3>
                     <progress class="progress-bar" max="100" value="10">70%</progress>
                 </div>
             </article>
@@ -83,14 +83,28 @@
                 <img class="icon" src="assets/IMG/ico-python.png" alt="Logo Python pixel art">
                 <div class="right">
                     <h3 class="title">Python</h3>
-                    <progress class="progress-bar" max="100" value="40">70%</progress>
+                    <progress class="progress-bar" max="100" value="65">70%</progress>
                 </div>
             </article>
             <article class="list">
-                <img class="icon" src="assets/IMG/ico-react.png" alt="Logo React pixel art">
+                <img class="icon" src="assets/IMG/excel.png" alt="Logo Excel pixel art">
                 <div class="right">
-                    <h3 class="title">React</h3>
-                    <progress class="progress-bar" max="100" value="10">70%</progress>
+                    <h3 class="title">Excel</h3>
+                    <progress class="progress-bar" max="100" value="90">70%</progress>
+                </div>
+            </article>
+            <article class="list">
+                <img class="icon" src="assets/IMG/postgre.png" alt="Logo PostgreSQL pixel art">
+                <div class="right">
+                    <h3 class="title">PostgreSQL</h3>
+                    <progress class="progress-bar" max="100" value="50">70%</progress>
+                </div>
+            </article>
+            <article class="list">
+                <img class="icon" src="assets/IMG/power-bi.png" alt="Logo Power BI pixel art">
+                <div class="right">
+                    <h3 class="title">Power BI</h3>
+                    <progress class="progress-bar" max="100" value="70">70%</progress>
                 </div>
             </article>
         </div>
@@ -98,17 +112,34 @@
 
     <section id="projects" class="section -projects">
         <h2 class="main-title">Projetos</h2>
-        <div class="wrapper-projects">
-            <figure class="card-project">
-                <img class="projectimage" src="assets/IMG/59de15c7-059d-4275-822b-654e1e93ca18.jpeg" alt="">
-            </figure>
-            <figure class="card-project">
-                <img class="projectimage" src="assets/IMG/4976d438-7022-43dc-9fcc-64821c86de96.jpeg" alt="">
-            </figure>
-            <figure class="card-project">
-                <img class="projectimage" src="assets/IMG/fbd30f65-e5fb-43c3-a671-91434c81cc3a.jpeg" alt="">
-            </figure>
+        <div class="wrapper-topic">
+            <h2 class="topic-title">Machine Learning</h2>
+            <div class="wrapper-projects">
+                <a href="" class="card-project">
+                    <img class="projectimage" src="assets/IMG/deep-learning.png" alt="">
+                </a>
+                <a href="" class="card-project">
+                    <img class="projectimage" src="assets/IMG/cat-or-dog.png" alt="">
+                </a>
+                <a href="https://github.com/vcleyton/Classification_ML/blob/main/script.ipynb" target="_blank" class="card-project">
+                    <img class="projectimage" src="assets/IMG/music-classifier.png" alt=""></a>
+                </a>
+            </div>
         </div>
+        <div class="wrapper-topic">    
+            <h2 class="topic-title">Análise de Dados</h2>
+            <div class="wrapper-projects">
+                <a href="" class="card-project">
+                    <img class="projectimage" src="assets/IMG/59de15c7-059d-4275-822b-654e1e93ca18.jpeg" alt="">
+                </a>
+                <a href="" class="card-project">
+                    <img class="projectimage" src="assets/IMG/4976d438-7022-43dc-9fcc-64821c86de96.jpeg" alt="">
+                </a>
+                <a href="" class="card-project">
+                    <img class="projectimage" src="assets/IMG/fbd30f65-e5fb-43c3-a671-91434c81cc3a.jpeg" alt=""></a>
+                </a>
+            </div>
+        </div>    
     </section>
 
     <section id="sobre" class="section -sobre">
@@ -121,17 +152,17 @@
         <form class="main-formulario" action="" method="get">
             <div class="wrapper -contatos">
                 <label class="label" for="">Nome:</label>
-                <input class="input" type="text" required>
+                <input class="input -nome" type="text" required>
             </div>    
             <div class="wrapper -contatos">
                 <label class="label" for="">Email:</label>
-                <input class="input" type="email" required>
+                <input class="input -email" type="email" required>
             </div>    
             <div class="wrapper -contatos">
                 <label class="label" for="message">Mensagem:</label>
                 <textarea class="input -message" id="message" required></textarea>
             </div>
-            <button type="submit" class="button -contatos">Enviar</button>    
+            <button type="submit" class="button -contatos" onclick="dados()">Enviar</button>    
         </form>
     </section> 
 
@@ -148,6 +179,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="module" src="app.js"></script>
 
 </body>
 </html>
